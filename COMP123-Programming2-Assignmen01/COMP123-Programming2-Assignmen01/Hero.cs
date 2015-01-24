@@ -20,8 +20,9 @@ namespace COMP123_Assignment01
         // CONSTRUCTOR +++++++++++++++++++++++++++++++++++++++++++++++
         public Hero(string name)
         {
+            // Initialize properties via the constructor
             this.name = name;
-            generateAbilities();
+            generateAbilities();//Call the generateAbilities method
         }
 
         // Private METHODS +++++++++++++++++++++++++++++++++++++++++++
@@ -31,16 +32,14 @@ namespace COMP123_Assignment01
             Random rnd = new Random();
             this.strength = rnd.Next(1, 100);
             Console.WriteLine("The hero's strength score is {0}", this.strength);
-            //Random rnd2 = new Random();
             this.speed = rnd.Next(1, 100);
             Console.WriteLine("The hero's speed score is {0}", this.speed);
-            //Random rnd3 = new Random();
             this.health = rnd.Next(1, 100);
             Console.WriteLine("The hero's health score is {0}", this.health);
         }
 
         // Public METHODS +++++++++++++++++++++++++++++++++++++++++++
-        // calls the hitAttempt method and display damage message
+        // Call the hitAttempt method.If it is true,and it will display damage message
         public void fight()
         {
             if (hitAttempt() == true)
@@ -50,13 +49,13 @@ namespace COMP123_Assignment01
         }
 
         // Private METHODS +++++++++++++++++++++++++++++++++++++++++++
-        // a method	that will randomly determine if	its the	Hero hits
+        // a method	that will randomly determine if	it is the Hero hits
         private bool hitAttempt()
         {
             //Random rnd = new Random();
             int hit = new Random().Next(1, 100);
             Console.WriteLine("The hit is {0}", hit);
-            if (hit <= 20)//if hit <= 20,it should be 20% of the time.
+            if (hit <= 20)//if hit <= 20,it should belong to 20% of the time.
             {
                 return true;
             }
@@ -70,7 +69,6 @@ namespace COMP123_Assignment01
         // a method	that calculates	the	damage the Hero causes to the target
         private int hitDamage()
         {
-            //Random rnd5 = new Random();
             int number = new Random().Next(1, 6);
             Console.WriteLine("The number is {0}", number);
             int damage = this.strength * number;
