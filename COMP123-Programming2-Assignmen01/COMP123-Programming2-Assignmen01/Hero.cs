@@ -57,10 +57,12 @@ namespace COMP123_Assignment01
             Console.WriteLine("The hit is {0}", hit);
             if (hit <= 20)//if hit <= 20,it should belong to 20% of the time.
             {
+                Console.WriteLine("Hit successfully...YEAH!");
                 return true;
             }
             else
             {
+                Console.WriteLine("Hit unsuccessfully...WOW!");
                 return false;
             }
         }

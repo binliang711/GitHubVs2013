@@ -6,6 +6,7 @@
  * 1.This is 1st Edition.
  * 2.2nd Edition,debugging successfully!
  * 3.3rd Edition,improve the comments.
+ * 4.4th Edition,add infomation to display whether hits successfully.
  */
 using System;
 using System.Collections.Generic;
