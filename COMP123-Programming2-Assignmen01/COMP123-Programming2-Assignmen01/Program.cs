@@ -1,12 +1,13 @@
 ﻿/*
  * studentName:Bin Liang | studentNumber:300788322
- * Date last Modified:Jan 23th,2015
+ * Date last Modified:Jan 27th,2015
  * Program description:COMP123_Assignment01,Implement the Hero Class.
  * Revision	History:
  * 1.This is 1st Edition.
  * 2.2nd Edition,debugging successfully!
  * 3.3rd Edition,improve the comments.
  * 4.4th Edition,add infomation to display whether hits successfully.
+ * 5.5th Edition,remove unnecessary code.
  */
 using System;
 using System.Collections.Generic;

@@ -52,7 +52,6 @@ namespace COMP123_Assignment01
         // a method	that will randomly determine if	it is the Hero hits
         private bool hitAttempt()
         {
-            //Random rnd = new Random();
             int hit = new Random().Next(1, 100);
             Console.WriteLine("The hit is {0}", hit);
             if (hit <= 20)//if hit <= 20,it should belong to 20% of the time.
@@ -72,7 +71,7 @@ namespace COMP123_Assignment01
         private int hitDamage()
         {
             int number = new Random().Next(1, 6);
-            Console.WriteLine("The number is {0}", number);
+            Console.WriteLine("The random number is {0}", number);
             int damage = this.strength * number;
             return damage;
         }
